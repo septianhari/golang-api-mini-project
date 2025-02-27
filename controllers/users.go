@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/septianhari/golang-mini-api-project/database"
-	"github.com/septianhari/golang-mini-api-project/models"
-	"github.com/septianhari/golang-mini-api-project/repositories"
+	"github.com/septianhari/golang-api-mini-project/database"
+	"github.com/septianhari/golang-api-mini-project/models"
+	"github.com/septianhari/golang-api-mini-project/repositories"
 )
 
 func Register(c *fiber.Ctx) error {
