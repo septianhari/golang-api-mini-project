@@ -1,7 +1,7 @@
 package database
 
 import (
-	"github.com/septianhari/golang-mini-api-project/models"
+	"github.com/septianhari/golang-api-mini-project/models"
 	"gorm.io/gorm"
 )
 
