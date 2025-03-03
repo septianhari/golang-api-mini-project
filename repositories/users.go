@@ -21,7 +21,7 @@ func Register(db *gorm.DB, user models.User) error {
 	hash, _ := HashPassword(user.Password)
 	user.Password = hash
 
-	// birthDate, _ := time.Parse("2006-01-02", user.BirthDate.String())
+	// birthDate, _ := time.Parse("2005-01-02", user.BirthDate.String())
 	// user.BirthDate = birthDate
 
 	result := db.Clauses(clause.Returning{}).Create(&user)

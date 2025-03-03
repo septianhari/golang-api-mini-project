@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -40,7 +40,7 @@ func main() {
 		fmt.Println("Connecting databse SUCCESS")
 	}
 
-	database.DbMigrate(DB)
+	database.DbMigrate()
 
 	app := fiber.New()
 
